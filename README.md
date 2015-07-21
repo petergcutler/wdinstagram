@@ -1,7 +1,7 @@
 ##WDInstagram
 
 ### Prompt
-We're going to create a one model Rails CRUD App from scratch. Our model is going to be an Entry.
+We're going to create a one model Sinatra CRUD App from scratch. Our model is going to be an Entry.
 
 An Entry has the following:
 
@@ -9,7 +9,7 @@ An Entry has the following:
 * photo_url
 * date_taken
 
-Your Rails app should have the following controller actions:
+Your app should have the following controller actions:
 
 * index (displays all entries)
 * show (displays a specific entry)
@@ -21,11 +21,9 @@ Your Rails app should have the following controller actions:
 
 ### Instructions
 
-1. Create a new rails app called `wdinstagram_app`
-   - use and examine this command: `rails new wdinstagram_app -d postgresql`
-2. Create a database for your app using `rake db:create`
-   - use psql to make sure your database was in fact created
-   - __Note:__ You'll have to be in your rails project directory to rake db:create
+1. Create an `app.rb` file for your Sinatra app
+2. Create a database for your app using rake db:create
+  * Your database must run on PSQL.
 3. Generate a migration file and have it create an `entries` table with the attributes listed above
 4. Run `rake db:migrate` to actually create that table
 5. Create your __Entry__ model
