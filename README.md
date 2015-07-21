@@ -3,6 +3,8 @@
 ### Prompt
 We're going to create our own one-model (WD)Instagram app with CRUD capability. Our model is going to be an Entry.
 
+When you're done, it will look something like this: [INSERT LINK]
+
 An Entry has the following:
 
 * author
