@@ -29,9 +29,11 @@ Your app should have the following RESTful actions:
 3. Create a database
   * `$ createdb wdinstagram`
 4. Create a schema file and generate a table for your Entry model.
-  * Create a config folder in your working folder: `$ mkdir db`
-  * Create a schema file in that `db` folder: `$ db/wdinstagram_schema.sql`
-  * Migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
+  * Create a config folder in your working folder: `$ mkdir config`
+  * Create a schema file in that `config` folder: `$ config/wdinstagram_schema.sql`
+  * Migrate your schema into PSQL: `$ psql -d wdinstagram < config/wdinstagram_schema.sql`
+5. Create and run a seed file.
+  * Create: `$ touch config/seeds.rb`
 5. Create routes for your app, mapping them to the RESTful actions listed above
 6. Create the necessary views for the actions above
 
