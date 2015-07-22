@@ -5,7 +5,7 @@ require "active_record"
 require "pry"
 
 require_relative "../models/entry"
-require_relative "../config/db.rb"
+require_relative "../db/db.rb"
 
 Entry.destroy_all
 
