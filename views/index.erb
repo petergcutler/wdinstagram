@@ -1,0 +1,13 @@
+<% @entries.each do |entry| %>
+  <div class="entry">
+    <div class="entry-info">
+      <span><%= entry.author %></span>
+      <span><a href="/entries/<%= entry.id %>"><%= entry.date_taken %></a></span>
+    </div>
+    <img class="entry-photo" src="<%= entry.photo_url %>">
+    <div class="entry-links">
+      <a href="/entries/<%= entry.id %>/edit">Edit</a>
+      <a href="#">Delete</a>
+    </div>
+  </div>
+<% end %>

@@ -1,0 +1,36 @@
+body {
+  color: "red";
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.entry {
+
+}
+
+.entry-info {
+  display: block;
+}
+
+.entry-author, .entry-date {
+  display: inline-block;
+}
+
+.entry-author {
+  float: left;
+  width: 20%;
+  text-align: left;
+}
+
+.entry-date {
+  float: right;
+  width: 20%;
+  text-align: right;
+}
+
+.entry-photo {
+
+}
