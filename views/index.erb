@@ -5,9 +5,12 @@
       <span><a href="/entries/<%= entry.id %>"><%= entry.date_taken %></a></span>
     </div>
     <img class="entry-photo" src="<%= entry.photo_url %>">
-    <div class="entry-links">
+    <div class="entry-edit-delete">
       <a href="/entries/<%= entry.id %>/edit">Edit</a>
-      <a href="#">Delete</a>
+      <form action="/entries/<%= entry.id %>" method="post">
+        <input name="_method" type="hidden" value="delete">
+        <button type="submit">Delete</button>
+      </form>
     </div>
   </div>
 <% end %>

@@ -20,7 +20,7 @@ h1 a {
   margin-bottom: 3em;
 }
 
-.entry-info, .entry-links {
+.entry-info, .entry-edit-delete {
   display: block;
 }
 
@@ -28,6 +28,7 @@ h1 a {
   display: inline-block;
 }
 
+/* show: author, edit */
 .entry-info span:nth-child(1),
 .entry-links a:nth-child(1) {
   float: left;
@@ -35,6 +36,7 @@ h1 a {
   text-align: left;
 }
 
+/* show: date, delete */
 .entry-info span:nth-child(2),
 .entry-links a:nth-child(2) {
   float: right;

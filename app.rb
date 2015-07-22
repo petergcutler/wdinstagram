@@ -52,7 +52,7 @@ get "/entries/:id" do
 end
 
 # delete
-delete "entry/:id" do
+delete "entries/:id" do
   @entry = Entry.find( params[:id] )
   @entry.destroy
   redirect "/"
