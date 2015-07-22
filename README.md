@@ -23,6 +23,8 @@ When you're done, it will look something like this: [INSERT LINK]
 
 ### Instructions
 
+1. Write 5 user stories for your app.
+  * Keep it simple and think about what functionality your MVP needs.
 1. Create an `app.rb` file for your Sinatra app
 2. Create a Gemfile with all the dependencies required by your app
   * Once that's ready, run: `$ bundle install`
