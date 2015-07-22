@@ -43,3 +43,4 @@ When you're done, it will look something like this: [INSERT LINK]
 2. Add a column for `caption` to your Entry, which is a text description of the shot. You'll need to generate a database migration for this and then update the rest of your app to be able to display these captions.
 3. Add "Like" functionality to your posts.
 4. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.
+5. Give your Comments model full CRUD capability.
