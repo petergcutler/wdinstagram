@@ -1,0 +1,11 @@
+require "sinatra"
+require "sinatra/reloader"
+require "bundler/setup"
+require "pg"
+require "active_record"
+require "pry"
+
+require_relative "models/entry"
+require_relative "controllers/entries"
+require_relative "db/db"
+require_relative "db/seeds"

@@ -1,0 +1,6 @@
+gem "sinatra"
+gem "sinatra-contrib"
+gem "activerecord"
+gem "sinatra-activerecord"
+gem "pg"
+gem "pry"
