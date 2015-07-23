@@ -15,5 +15,15 @@
         <button type="submit">Delete</button>
       </form>
     </div>
+    <div class="comments-container">
+      <p>COMMENTS</p>
+      <% entry.comments.each do |comment| %>
+        <div class="comment">
+          <p><%= comment.body %></p>
+          <span><span class="posted-by" >Posted by</span> <%= comment.author %></span>
+          <span><%= comment.date_posted %></span>
+        </div>
+      <% end %>
+    </div>
   </div>
 <% end %>

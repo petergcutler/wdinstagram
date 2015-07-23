@@ -58,7 +58,7 @@ h1 a {
   font-size: 0.7em;
 }
 
-.entry-posted-by {
+.posted-by {
   font-weight: 100;
   color: black;
 }
@@ -98,4 +98,24 @@ h1 a {
   line-height: 20px;
   color: white;
   background-color: #55ACEE;
+}
+
+.comments-container {
+  display: block;
+  margin-top: 2em;
+}
+
+.comment {
+  font-size: 12px;
+  border-bottom: 2px white solid;
+  padding-bottom: 1em;
+}
+
+.comment p {
+  margin-bottom: 0.5em;
+  color: black;
+}
+
+.comment > span {
+  display: block;
 }
