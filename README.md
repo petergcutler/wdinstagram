@@ -23,19 +23,15 @@ Your app should have the following RESTful actions:
 
 1. Write 5 user stories for your app.
   * Keep it simple and think about what functionality your MVP needs.
-2. Create an `app.rb` file for your Sinatra app
-3. Create a database
-  * `$ createdb wdinstagram`
-4. Connect your app to your new database with a `db.rb` file.
-  * Create: `$ db/db.rb`
-5. Create a schema file and generate a table for your Entry model.
-  * Create a config folder in your working folder: `$ mkdir db`
-  * Create a schema file in that `db` folder: `$ db/wdinstagram_schema.sql`
-  * Migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
-6. Create a seed file in your `db` folder: `$ touch db/seeds.rb`
+2. Create a database: `$ createdb wdinstagram`
+3. Create an `app.rb` file
+4. Create an Entry model
+4. Create a `wdinstagram_schema.sql` schema file and generate a table for your Entry model.
+  * When ready, migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
+5. Create seed data in `$ db/seeds.rb`
   * When ready, run your seeds file: `$ ruby db/seeds.rb`
-7. Create routes for your app, mapping them to the RESTful actions listed above
-8. Create the necessary views for the actions above
+6. Create routes for your app, mapping them to the RESTful actions listed above
+7. Create the views for your routes
 
 ### Bonus
 
