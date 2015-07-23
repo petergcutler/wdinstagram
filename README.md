@@ -1,15 +1,15 @@
-##WDInstagram
+## WDInstagram
 
 ### Prompt
-We're going to create a one model Sinatra CRUD App from scratch. Our model is going to be an Entry.
+Today you're going to make your own version of Instagram (or something very close to it!). Your photo feed app will have full CRUD capability and operate on a single Entry model.
 
 An Entry has the following:
 
-* author
-* photo_url
-* date_taken
+* `author`
+* `photo_url`
+* `date_taken`
 
-Your app should have the following controller actions:
+Your app should have the following RESTful actions:
 
 * index (displays all entries)
 * show (displays a specific entry)
@@ -21,18 +21,26 @@ Your app should have the following controller actions:
 
 ### Instructions
 
-1. Create an `app.rb` file for your Sinatra app
-2. Create a database for your app using rake db:create
-  * Your database must run on PSQL.
-3. Generate a migration file and have it create an `entries` table with the attributes listed above
-4. Run `rake db:migrate` to actually create that table
-5. Create your __Entry__ model
-6. Create routes for your app, mapping them to the controller actions listed above
-7. Actually create the entries controller with the required controller actions
+1. Write 5 user stories for your app.
+  * Keep it simple and think about what functionality your MVP needs.
+2. Create an `app.rb` file for your Sinatra app
+3. Create a database
+  * `$ createdb wdinstagram`
+4. Connect your app to your new database with a `db.rb` file.
+  * Create: `$ db/db.rb`
+5. Create a schema file and generate a table for your Entry model.
+  * Create a config folder in your working folder: `$ mkdir db`
+  * Create a schema file in that `db` folder: `$ db/wdinstagram_schema.sql`
+  * Migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
+6. Create a seed file in your `db` folder: `$ touch db/seeds.rb`
+  * When ready, run your seeds file: `$ ruby db/seeds.rb`
+7. Create routes for your app, mapping them to the RESTful actions listed above
 8. Create the necessary views for the actions above
-9. Move on to the next controller action until you are done
 
 ### Bonus
 
-1. Add validation: name and photo_url need to be present, and the date_taken should be more recent than 10/1/2010.
+1. Add validation: `name` and `photo_url` need to be present, and the `date_taken` should be more recent than 10/1/2010.
 2. Add a column for `caption` to your Entry, which is a text description of the shot. You'll need to generate a database migration for this and then update the rest of your app to be able to display these captions.
+3. Add "Like" functionality to your posts.
+4. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.
+5. Give your Comments model full CRUD capability.
