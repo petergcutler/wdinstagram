@@ -42,7 +42,9 @@ Your app should have the following RESTful actions:
 
 ### Bonus<sup>2</sup>
 
-**NOTE:** These stretch goals will require research on material outside of what we've learned in class.
+**NOTE:** Some of these stretch goals may require research on subjects not yet covered in class.
 
 1. Add client-side validation to your Entry model. `name` and `photo_url` need to be present, and the `date_taken` should be more recent than 10/1/2010.
   * Get started here: [http://guides.rubyonrails.org/active_record_validations.html](http://guides.rubyonrails.org/active_record_validations.html)
+2. Move your form for new entries to the index (i.e., you won't have a separate page for creating posts).
+3. Do the same for comments.
