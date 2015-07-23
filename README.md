@@ -39,8 +39,7 @@ Your app should have the following RESTful actions:
 
 ### Bonus
 
-1. Add validation: `name` and `photo_url` need to be present, and the `date_taken` should be more recent than 10/1/2010.
-2. Add a column for `caption` to your Entry, which is a text description of the shot. You'll need to generate a database migration for this and then update the rest of your app to be able to display these captions.
-3. Add "Like" functionality to your posts.
-4. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.
-5. Give your Comments model full CRUD capability.
+1. Add a column for `caption` to your Entry, which is a text description of the shot. You'll need to generate a database migration for this and then update the rest of your app to be able to display these captions.
+2. Add "Like" functionality to your posts.
+3. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.
+4. Give your Comments model full CRUD capability.
