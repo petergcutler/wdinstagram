@@ -25,21 +25,21 @@ When you're done, it will look something like this: [INSERT LINK]
 
 1. Write 5 user stories for your app.
   * Keep it simple and think about what functionality your MVP needs.
-1. Create an `app.rb` file for your Sinatra app
-2. Create a Gemfile with all the dependencies required by your app
+2. Create an `app.rb` file for your Sinatra app
+3. Create a Gemfile with all the dependencies required by your app
   * Once that's ready, run: `$ bundle install`
-3. Create a database
+4. Create a database
   * `$ createdb wdinstagram`
-4. Connect your app to your new database with a `db.rb` file.
+5. Connect your app to your new database with a `db.rb` file.
   * Create: `$ db/db.rb`
-4. Create a schema file and generate a table for your Entry model.
+6. Create a schema file and generate a table for your Entry model.
   * Create a config folder in your working folder: `$ mkdir db`
   * Create a schema file in that `db` folder: `$ db/wdinstagram_schema.sql`
   * Migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
-5. Create and link a seed file to `app.rb`
-  * Create: `$ touch db/seeds.rb`
-5. Create routes for your app, mapping them to the RESTful actions listed above
-6. Create the necessary views for the actions above
+7. Create a seed file in your `db` folder: `$ touch db/seeds.rb`
+  * When ready, run your seeds file: `$ ruby db/seeds.rb`
+8. Create routes for your app, mapping them to the RESTful actions listed above
+9. Create the necessary views for the actions above
 
 ### Bonus
 
