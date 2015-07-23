@@ -8,4 +8,4 @@ require "pry"
 
 require_relative "models/entry"
 require_relative "controllers/entries"
-require_relative "db/db"
+require_relative "db/connection"
