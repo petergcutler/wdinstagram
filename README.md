@@ -19,8 +19,6 @@ Your app should have the following RESTful actions:
 * update (takes input from the edit form and updates the entry in the db appropriately)
 * destroy (deletes a specific entry from the database)
 
-When you're done, it will look something like this: [INSERT LINK]
-
 ### Instructions
 
 1. Write 5 user stories for your app.
