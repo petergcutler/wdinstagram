@@ -1,6 +1,4 @@
 require 'bundler/setup'
-require "sinatra"
-require "sinatra/reloader"
 require "pry"
 
 require_relative "../db/connection"
