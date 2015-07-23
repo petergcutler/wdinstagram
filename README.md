@@ -24,8 +24,7 @@ Your app should have the following RESTful actions:
 1. Write 5 user stories for your app.
   * Keep it simple and think about what functionality your MVP needs.
 2. Create a database: `$ createdb wdinstagram`
-3. Create an `app.rb` file
-4. Create an Entry model
+3. Create an Entry model
 4. Create a `wdinstagram_schema.sql` schema file and generate a table for your Entry model.
   * When ready, migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
 5. Create seed data in `$ db/seeds.rb`
