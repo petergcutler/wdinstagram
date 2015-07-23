@@ -1,4 +1,4 @@
-## WDInstagram
+##WDInstagram
 
 ### Prompt
 Today you're going to make your own version of Instagram (or something very close to it!). Your photo feed app will have full CRUD capability and operate on a single Entry model.
@@ -23,23 +23,20 @@ Your app should have the following RESTful actions:
 
 1. Write 5 user stories for your app.
   * Keep it simple and think about what functionality your MVP needs.
-2. Create an `app.rb` file for your Sinatra app
-3. Create a database
-  * `$ createdb wdinstagram`
-4. Connect your app to your new database with a `db.rb` file.
-  * Create: `$ db/db.rb`
-5. Create a schema file and generate a table for your Entry model.
-  * Create a config folder in your working folder: `$ mkdir db`
-  * Create a schema file in that `db` folder: `$ db/wdinstagram_schema.sql`
-  * Migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
-6. Create a seed file in your `db` folder: `$ touch db/seeds.rb`
+2. Create a database: `$ createdb wdinstagram`
+3. Create an `app.rb` file
+4. Create an Entry model
+4. Create a `wdinstagram_schema.sql` schema file and generate a table for your Entry model.
+  * When ready, migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
+5. Create seed data in `$ db/seeds.rb`
   * When ready, run your seeds file: `$ ruby db/seeds.rb`
-7. Create routes for your app, mapping them to the RESTful actions listed above
-8. Create the necessary views for the actions above
+6. Create routes for your app, mapping them to the RESTful actions listed above
+7. Create the views for your routes
 
 ### Bonus
 
 1. Add a column for `caption` to your Entry, which is a text description of the shot. You'll need to generate a database migration for this and then update the rest of your app to be able to display these captions.
 2. Add "Like" functionality to your posts.
-3. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.
-4. Give your Comments model full CRUD capability.
+3. Create a route that shows all the posts by a given author.
+4. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.
+5. Give your Comments model full CRUD capability.
