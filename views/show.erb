@@ -5,9 +5,9 @@
   </div>
   <img class="entry-photo" src="<%= @entry.photo_url %>">
   <div class="entry-edit-delete">
-    <a href="/entries/<%= entry.id %>/edit">Edit</a>
+    <a href="/entries/<%= @entry.id %>/edit">Edit</a>
     <!-- delete -->
-    <form action="/entries/<%= entry.id %>" method="post">
+    <form action="/entries/<%= @entry.id %>" method="post">
       <input name="_method" type="hidden" value="delete">
       <button type="submit">Delete</button>
     </form>
