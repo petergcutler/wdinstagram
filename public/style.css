@@ -25,10 +25,9 @@ h1 a {
 
 .new-post {
   display: table;
-  width: 20%;
-  height: 30px;
   margin: 0 auto;
   border-radius: 5px;
+  padding: 0 6px;
   text-decoration: none;
   text-align: center;
   line-height: 30px;
@@ -76,9 +75,8 @@ h1 a {
 .entry-edit-delete a {
   float: left;
   display: inline-block;
-  width: 10%;
-  height: 20px;
   border-radius: 5px;
+  padding: 0 6px;
   text-decoration: none;
   text-align: center;
   font-size: 0.8em;
@@ -90,10 +88,9 @@ h1 a {
 .entry-edit-delete button {
   float: right;
   display: inline-block;
-  width: 10%;
-  height: 20px;
   border: none;
   border-radius: 5px;
+  padding: 0 6px;
   text-decoration: none;
   text-align: center;
   font-family: "Montserrat", Helvetica, sans-serif
