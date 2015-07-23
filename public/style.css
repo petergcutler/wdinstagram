@@ -6,6 +6,8 @@
 body {
   font-family: Montserrat, Helvetica, sans-serif;
   font-size: 18px;
+  color: #55ACEE;
+  background-color: #F5F8FA;
 }
 
 .container {
@@ -22,7 +24,7 @@ h1 {
 }
 
 h1 a {
-  color: black;
+  color: #55ACEE;
   text-decoration: none;
 }
 
@@ -35,12 +37,15 @@ h1 a {
   text-decoration: none;
   text-align: center;
   line-height: 30px;
-  background-color: black;
+  background-color: #55ACEE;
   color: white;
 }
 
 .entry {
   margin-bottom: 3em;
+  border: 5px white solid;
+  border-radius: 10px;
+  padding: 1em;
 }
 
 .entry-header, .entry-edit-delete {
@@ -51,18 +56,54 @@ h1 a {
   margin-bottom: 1em;
 }
 
-.entry-header span {
-  display: inline-block;
+.entry-header > span {
+  display: block;
 }
 
-/* show: date, delete */
-.entry-header > a,
-.entry-links a:nth-child(2) {
-  float: right;
-  width: 20%;
-  text-align: right;
+.entry-header span:nth-child(2) {
+  font-size: 0.7em;
+}
+
+.entry-posted-by {
+  font-weight: 100;
+  color: black;
 }
 
 .entry-photo {
   width: 100%;
+  border-radius: 10px;
+}
+
+.entry-edit-delete {
+  margin-bottom: 1em;
+}
+
+.entry-edit-delete a {
+  float: left;
+  display: inline-block;
+  width: 10%;
+  height: 20px;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-size: 0.8em;
+  line-height: 20px;
+  color: white;
+  background-color: #55ACEE;
+}
+
+.entry-edit-delete button {
+  float: right;
+  display: inline-block;
+  width: 10%;
+  height: 20px;
+  border: none;
+  border-radius: 5px;
+  text-decoration: none;
+  text-align: center;
+  font-family: "Montserrat", Helvetica, sans-serif
+  font-size: 2em;
+  line-height: 20px;
+  color: white;
+  background-color: #55ACEE;
 }

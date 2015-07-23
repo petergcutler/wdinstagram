@@ -5,9 +5,9 @@ Today you're going to make your own version of Instagram (or something very clos
 
 An Entry has the following:
 
-* author
-* photo_url
-* date_taken
+* `author`
+* `photo_url`
+* `date_taken`
 
 Your app should have the following RESTful actions:
 
@@ -43,7 +43,7 @@ When you're done, it will look something like this: [INSERT LINK]
 
 ### Bonus
 
-1. Add validation: name and photo_url need to be present, and the date_taken should be more recent than 10/1/2010.
+1. Add validation: `name` and `photo_url` need to be present, and the `date_taken` should be more recent than 10/1/2010.
 2. Add a column for `caption` to your Entry, which is a text description of the shot. You'll need to generate a database migration for this and then update the rest of your app to be able to display these captions.
 3. Add "Like" functionality to your posts.
 4. Add a second "Comments" model to your app so that users may leave comments on each of your Entries.

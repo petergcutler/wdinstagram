@@ -13,7 +13,7 @@ end
 # create
 post "/entries" do
   @entry = Entry.new( params[:entry] )
-  @entry.date_taken = Time.now.strftime("%F")
+  @entry.update( date_taken: Time.now.strftime("%B %d, %Y") )
   if @entry.save
     redirect "entries/#{@entry.id}"
   else
