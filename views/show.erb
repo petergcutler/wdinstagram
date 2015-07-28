@@ -1,0 +1,19 @@
+<ul>
+  <li>
+    <h2><%= @entry.author %></h2>
+  </li>
+
+  <li>
+    <img src='<%= @entry.photo_url %>'>
+  </li>
+
+  <li>
+    <a href="/<%= @entry.id %>/edit">Edit Entry</a>
+  </li>
+
+  <li>
+    <form method="post" action="/<%= @entry.id %>">
+      <input name="_method" value="delete" type="hidden">
+      <input type="submit" value="Delete Entry">
+    </form>
+  </li>

@@ -1,0 +1,10 @@
+<h3>Editing Entry</h3>
+
+<form action="/<%= @entry.id %>" method="post">
+  <input type="hidden" name="_method" value="put"> <!-- for REST -->
+  <input value="<%= @entry.author %>"     name="entry[author]"     placeholder="Author's Name" type="text">
+  <input value="<%= @entry.photo_url %>"  name="entry[photo_url]"  placeholder="Photo URL"     type="text">
+  <input value="<%= @entry.date_taken %>" name="entry[date_taken]" placeholder="Date Taken"    type="text">
+  <input value="<%= @entry.caption %>"    name="entry[caption]"    placeholder="caption"       type="text">
+  <input type="submit" value="Update">
+</form>

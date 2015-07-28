@@ -27,13 +27,27 @@ Your app should have the following RESTful actions:
 
 1. Write 5 user stories for your app.
   * Keep it simple and think about what functionality your MVP needs.
+
+  * As a user, I want to be able to upload pictures to share with friends
+  * As a user, I want to be able to remove pictures I have uploaded, to save myself from embarassment
+  * As a user, I want to be able to see multiple author's pictures so I can keep up with
+  others
+  * As a user I want to be able to edit/update pictures I have uploaded to modify my original submissions
+  * As a user I want to be able to write a caption with photos, to share funny comments.
+
 2. Create a database: `$ createdb wdinstagram`
 3. Create an Entry model
+
 4. Create a `wdinstagram_schema.sql` schema file and generate a table for your Entry model.
-  * When ready, migrate your schema into PSQL: `$ psql -d wdinstagram < db/wdinstagram_schema.sql`
+  * When ready, migrate your schema into PSQL: `$ psql -d wdinstagram < db/schema.sql`
+
+
 5. Create seed data in `$ db/seeds.rb`
   * When ready, run your seeds file: `$ ruby db/seeds.rb`
+
+  
 6. Create routes for your app, mapping them to the RESTful actions listed above
+
 7. Create the views for your routes
 
 ### Bonus

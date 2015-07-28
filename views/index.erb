@@ -1,0 +1,25 @@
+<ul>
+  <li>
+    <h1>Entries
+      <a href="/new">(+)</a>
+    </h1>
+  </li>
+<% @entries.each do |entry| %>
+  <li>
+    <a href='/<%= entry.author %>'><%= entry.author %></a>
+  </li>
+
+  <li>
+    <%= entry.date_taken %>
+  </li>
+
+  <li>
+    <a href='/<%= entry.id %>'><img src='<%= entry.photo_url %>'></a>
+  </li>
+
+  <li>
+    <%= entry.caption %>
+  </li>
+
+<% end %>
+</ul>
